@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Elements and Forms </title>
+    <link rel="stylesheet" href="styles.css"> 
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f2f2f2;
+        }
+        h1, h2 {
+            color: #333;
+            text-align: center;
+        }
+        ol {
+            list-style-type: upper-roman; /* Roman numeral styling */
+            margin-left: 30px;
+            color:#333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: white;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background: #ff004f;
+            color: white;
+        }
+        .form-container {
+            max-width: 500px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #ff004f;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #d1003a;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Page Title -->
+    <h1>Welcome to My Web Page</h1>
+
+    <!-- Ordered List with Roman Numerals -->
+    <h2>My Top 5 Favorite Technologies</h2>
+    <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>React</li>
+    </ol>
+
+    <!-- External Image from Pexels -->
+    <h2>Beautiful Nature Image</h2>
+    <img src="img 30.jpeg" alt="A university image " width="100%">
+
+    <!-- Contacts Table -->
+    <h2>Contact List</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Mobile</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>John mark</td>
+            <td>123 Street, Nairobi</td>
+            <td>+254712345678</td>
+            <td>johnmark@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Mark Tony</td>
+            <td>456 Avenue, Mombasa</td>
+            <td>+254798765432</td>
+            <td>marktony@yahoo.com</td>
+        </tr>
+        <tr>
+            <td>Elvis Johnson</td>
+            <td>789 Road, Kisumu</td>
+            <td>+254701234567</td>
+            <td>Elvisjohnson@hotmail.com</td>
+        </tr>
+        <tr>
+            <td>Emily White</td>
+            <td>101 Street, Nakuru</td>
+            <td>+254711223344</td>
+            <td>emilywhite@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Chris Brown</td>
+            <td>202 Boulevard, Eldoret</td>
+            <td>+254722334455</td>
+            <td>chrisbrown@mail.com</td>
+        </tr>
+    </table>
+
+    <!-- Registration Form -->
+    <h2>Register Here</h2>
+    <div class="form-container">
+        <form action="#" method="post">
+            <!-- Name Field -->
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+            <!-- Email Field -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <!-- Password Field -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+            <!-- Date Field -->
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <!-- Dropdown Field -->
+            <label for="country">Select Country:</label>
+            <select id="country" name="country" required>
+                <option value="">Choose your country</option>
+                <option value="kenya">Kenya</option>
+                <option value="usa">USA</option>
+                <option value="uk">UK</option>
+                <option value="canada">Canada</option>
+            </select>
+
+            <!-- Radio Buttons -->
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="male" required> <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female"> <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other"> <label for="other">Other</label>
+
+            <!-- Checkboxes -->
+            <label>Interests:</label><br>
+            <input type="checkbox" id="coding" name="interests" value="coding"> <label for="coding">Coding</label>
+            <input type="checkbox" id="design" name="interests" value="design"> <label for="design">Design</label>
+            <input type="checkbox" id="music" name="interests" value="music"> <label for="music">Music</label>
+
+            <!-- Submit Button -->
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+</body>
+</html>
